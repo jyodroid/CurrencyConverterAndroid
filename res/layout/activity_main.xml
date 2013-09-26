@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+               
+	<Button 
+		android:id="@+id/btn_add"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="addCurrency"
+	    android:requiresFadingEdge="horizontal"
+	    android:text="Add Currency"/>
+
+	<TextView
+	    android:id="@+id/txt_primary"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/btn_add"
+	    android:text="@string/defaultCurrency"
+	    android:textSize="@dimen/main_currency" />
+
+	<EditText
+	    android:id="@+id/et_primary"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/txt_primary"
+	    android:ems="10"
+	    android:inputType="number"
+	    android:text="1" />
+
+	<ListView
+	    android:id="@android:id/list"
+	    android:layout_width="wrap_content"
+	    android:layout_height="300dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/et_primary" >
+	</ListView>
+
+	<Button
+	    android:id="@+id/btn_calculate"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/et_primary"
+	    android:layout_marginRight="14dp"
+	    android:text="Calcular" 
+	    android:onClick = "calculate"/>
+
+</RelativeLayout>
