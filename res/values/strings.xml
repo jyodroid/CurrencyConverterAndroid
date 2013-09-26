@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CurrencyConverter</string>
+    <string name="action_settings">Settings</string>
+    <string name="desc">App logo</string>
+    <string name="splashPromo">Miguel Baquero - John Tangarife - Santiago Angée</string>
+    <string name="from">Convertir de </string>
+    <string name="title_activity_add_currency">AddCurrencyActivity</string>
+    <string name="country">Nombre del pais</string>
+    <string name="currencyname">Nombre de la moneda</string>
+
+</resources>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddCurrencyActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:ems="10"
+        android:hint="Nombre corto de la moneda" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_marginLeft="42dp"
+        android:layout_toRightOf="@+id/TextView01"
+        android:onClick="search"
+        android:text="Buscar" />
+
+    <EditText
+        android:id="@+id/et_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/btn_add"
+        android:ems="10"
+        android:hint="Pais de origen de la moneda" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_country"
+        android:layout_below="@+id/et_country"
+        android:text="@string/currencyname" />
+
+    <Button
+        android:id="@+id/btn_add"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_search"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/et_name"
+        android:onClick="addCurrency"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_add"
+        android:layout_alignBottom="@+id/btn_add"
+        android:layout_alignLeft="@+id/et_name"
+        android:text="Result"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
