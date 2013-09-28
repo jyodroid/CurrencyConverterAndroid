@@ -46,16 +46,26 @@ public class DataSource {
 			Currency currency = new Currency();
 			currency.setCurrencyName(cursor.getString(0));
 			currency.setCurrencyCountry(cursor.getString(1));
+<<<<<<< HEAD
 			currency.setDollarValue(cursor.getDouble(2));
+=======
+			currency.setDollarValue(cursor.getFloat(2));
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 			currencies.add(currency);
 			cursor.moveToNext();
 			
 		}
 		
+<<<<<<< HEAD
 		return currencies;
 	}
 	
 	public void clean(){
 		database.delete("currency", null, null);
 	}
+=======
+		
+		return currencies;
+	}
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 }

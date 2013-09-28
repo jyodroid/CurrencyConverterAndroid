@@ -4,11 +4,16 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     
     <uses-sdk
         android:minSdkVersion="9"
+=======
+    <uses-sdk
+        android:minSdkVersion="8"
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
         android:targetSdkVersion="18" />
 
     <application

@@ -1,19 +1,26 @@
 package com.currencyconverter;
 
+<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
+=======
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 import java.util.Timer;
 import java.util.TimerTask;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 import android.view.Window;
 
 public class SplashActivity extends Activity {
 
+<<<<<<< HEAD
 	//Duraciï¿½n del splash de 5 segundos
 	private long SPLASH_DELAY = 1000;
 	
@@ -22,6 +29,10 @@ public class SplashActivity extends Activity {
 	private Currency currency;
 	private Double dollarValue = 1.0;
 	private WebService ws;
+=======
+	//Duración del splash de 5 segundos
+	private long SPLASH_DELAY = 5000;
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +40,7 @@ public class SplashActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_splash);
         
+<<<<<<< HEAD
         //Inicializo el manejador
         ds = new DataSource(this);
         currency = new Currency();
@@ -42,11 +54,14 @@ public class SplashActivity extends Activity {
         dollarCurrency.setFavorite(1);
         dollarCurrency.setDollarValue(1.0);
         ds.addCurrency(dollarCurrency);
+=======
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
         //Creo la tarea de pasar a la actividad principal 
         TimerTask task = new TimerTask() {
 			
 			@Override
 			public void run() {
+<<<<<<< HEAD
 				
 				HashMap<String, String> namesAndCountries = new HashMap<String, String>();
 				
@@ -117,10 +132,20 @@ public class SplashActivity extends Activity {
 				startActivity(intent);
 				finish();//El usuario no pueda regresar al splash
 			}	
+=======
+				Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+				startActivity(intent);
+				finish();//El usuario no pueda regresar al splash
+			}
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 		};
 		
         //Programo la tarea para que se ejecute en 5 segundos
         Timer timer = new Timer();
         timer.schedule(task, SPLASH_DELAY);
+<<<<<<< HEAD
     }
+=======
+    }    
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 }

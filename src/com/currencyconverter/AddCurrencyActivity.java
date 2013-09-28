@@ -2,6 +2,7 @@ package com.currencyconverter;
 
 import android.os.Bundle;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,6 +20,17 @@ public class AddCurrencyActivity extends Activity {
 	private EditText name;
 	private EditText country;
 	private Button add;
+=======
+import android.widget.TextView;
+import android.app.Activity;
+import android.content.Intent;
+
+public class AddCurrencyActivity extends Activity {
+
+	private DataSource ds;
+	private Currency currencyToAdd;
+	private TextView result;
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +40,7 @@ public class AddCurrencyActivity extends Activity {
         ds.open();
         currencyToAdd = new Currency();
         result = (TextView) findViewById(R.id.txt_result);
+<<<<<<< HEAD
         name = (EditText) findViewById(R.id.et_name);
         country = (EditText) findViewById(R.id.et_country);
         add = (Button) findViewById(R.id.btn_add);
@@ -52,6 +65,19 @@ public class AddCurrencyActivity extends Activity {
 		
 		String[] currencyResult = 
 				result.getText().toString().split(" ");
+=======
+	}
+	
+	public void searchName(View view){
+		//populate currencytoadd
+		String[] currencyResult = 
+				result.getText().toString().split(" ");
+		
+		currencyToAdd.setCurrencyName(currencyResult[0]);
+		currencyToAdd.setCurrencyCountry(currencyResult[2]);
+		//Traer el valor actual de la moneda seleccionada y guardarlo en dollar value.
+		//Ver ejemplo de Angee http://www.firstamong.com/building-android-currency-converter/
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 	}
 	
 	public void addCurrency(View view){

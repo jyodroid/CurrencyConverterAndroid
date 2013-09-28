@@ -12,13 +12,25 @@
 	    android:requiresFadingEdge="horizontal"
 	    android:text="Add Currency"/>
 
+<<<<<<< HEAD
+=======
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	</LinearLayout>
+
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 	<TextView
 	    android:id="@+id/txt_primary"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentLeft="true"
 	    android:layout_below="@+id/btn_add"
+<<<<<<< HEAD
 	    android:text="@string/defaultCurrency"
+=======
+	    android:text="USD from: USA Dollar Value:"
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 	    android:textSize="@dimen/main_currency" />
 
 	<EditText
@@ -39,6 +51,7 @@
 	    android:layout_below="@+id/et_primary" >
 	</ListView>
 
+<<<<<<< HEAD
 	<Button
 	    android:id="@+id/btn_calculate"
 	    style="?android:attr/buttonStyleSmall"
@@ -50,4 +63,6 @@
 	    android:text="Calcular" 
 	    android:onClick = "calculate"/>
 
+=======
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 </RelativeLayout>

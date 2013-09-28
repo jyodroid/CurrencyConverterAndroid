@@ -7,6 +7,7 @@ public class Currency {
 
 	private String currencyName;
 	private String currencyCountry;
+<<<<<<< HEAD
 	private Double dollarValue;
 	private int favorite;
 	private int baseValue;
@@ -16,6 +17,10 @@ public class Currency {
 		setFavorite(0);
 		setBaseValue(0);
 	}
+=======
+	private float dollarValue;
+	
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 	
 	//Getters and setters
 	//Unique name like USD
@@ -35,6 +40,7 @@ public class Currency {
 	}
 	
 	//Dollar as referenced currency
+<<<<<<< HEAD
 	public Double getDollarValue() {
 		return dollarValue;
 	}
@@ -53,4 +59,12 @@ public class Currency {
 	public void setBaseValue(int baseValue) {
 		this.baseValue = baseValue;
 	}
+=======
+	public float getDollarValue() {
+		return dollarValue;
+	}
+	public void setDollarValue(float dollarValue) {
+		this.dollarValue = dollarValue;
+	}
+>>>>>>> 79f43014fecffda9e2e0af81707e7419047372b6
 }
