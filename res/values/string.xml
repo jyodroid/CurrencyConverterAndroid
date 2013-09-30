@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CurrencyConverter</string>
+    <string name="action_settings">Settings</string>
+    <string name="desc">App logo</string>
+    <string name="splashPromo">Miguel Baquero - John Tangarife - Santiago Angée</string>
+    <string name="title_activity_add_currency">AddCurrencyActivity</string>
+    <string name="country">Country Name</string>
+    <string name="currencyname">Currecy name</string>
+    <string name="defaultCurrency">"USD from: United_States_of_america"</string>
+	<string name="result">New Currency</string>
+	<string name="add_currency_btn">Add currency</string>
+	<string name="default_initvalue">1</string>
+	<string name="calculate_btn">Calculate</string>
+	<string name="deaful_currency_btn">Add 30 default currencies</string>
+	<string name="btn_serach">Search</string>
+	<string name="add">+</string>
+	<string name="clean">Clean the list</string>
+    
+</resources>

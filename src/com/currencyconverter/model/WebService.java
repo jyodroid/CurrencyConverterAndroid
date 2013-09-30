@@ -7,7 +7,7 @@
 	 * http://www.androidhive.info/2012/01/android-json-parsing-tutorial/
 	 * 
 	 */
-package com.currencyconverter;
+package com.currencyconverter.model;
 
 import java.io.BufferedReader;
 import java.io.IOException;

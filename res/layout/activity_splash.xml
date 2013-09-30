@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
 		android:layout_centerInParent="true"
         android:contentDescription="@string/desc"
-        android:src="@drawable/currencyexchange" />
+        android:src="@drawable/currencyconverter" />
 
     <TextView
         android:id="@+id/textView1"
@@ -20,4 +20,13 @@
         android:layout_marginBottom="71dp"
         android:text="@string/splashPromo" />
 
+    <ProgressBar
+        android:id="@+id/pb_splash"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/imageView" />
 </RelativeLayout>
+

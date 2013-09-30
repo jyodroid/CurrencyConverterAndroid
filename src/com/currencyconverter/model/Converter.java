@@ -1,8 +1,8 @@
-package com.currencyconverter;
+package com.currencyconverter.model;
 
 public class Converter {
 
-	protected Double convert(Double quantity, Double valueInDollars, Double exchangeRate) throws Exception {
+	public Double convert(Double quantity, Double valueInDollars, Double exchangeRate) throws Exception {
 		Double quantityInDollars = 0.0, newValue;
 		if (valueInDollars!=0.0){
 			quantityInDollars = quantity / valueInDollars;
